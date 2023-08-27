@@ -66,20 +66,10 @@ class SiteController extends Controller
         $starting = Yii::$app->request->get('starting');
         $length = Yii::$app->request->get('length');
         if ($starting === null || $length === null)
-            $products = $indexModel->fetchItemsFromApi(15, 10);
+            $products = $indexModel->fetchProductsFromApi(15, 10);
         else
-            $products = $indexModel->fetchItemsFromApi($starting, $length);
+            $products = $indexModel->fetchProductsFromApi($starting, $length);
         return $this->render('index', ["products" => $products]);
-    }
-
-    /**
-     * Displays Product detail.
-     *
-     * @return string
-     */
-    public function actionProduct()
-    {
-
     }
 
     /**
