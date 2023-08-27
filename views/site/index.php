@@ -18,11 +18,9 @@ $this->title = 'Eshop';
 
     <div class="body-content">
         <div class="row justify-content-center gap-5">
-            <?php echo Item::widget(["id" => 2, "productName" => "Phone", "price" => 1542, "imageUrl" => "/img/tv.jpg"]) ?>
-            <?php echo Item::widget(["id" => 2, "productName" => "Phone", "price" => 1542, "imageUrl" => "/img/tv.jpg"]) ?>
-            <?php echo Item::widget(["id" => 2, "productName" => "Phone", "price" => 1542, "imageUrl" => "/img/tv.jpg"]) ?>
-            <?php echo Item::widget(["id" => 2, "productName" => "Phone", "price" => 1542, "imageUrl" => "/img/tv.jpg"]) ?>
-            <?php echo Item::widget(["id" => 2, "productName" => "Phone", "price" => 1542, "imageUrl" => "/img/tv.jpg"]) ?>
+            <?php foreach ($products as $product): ?>
+                <?php echo Item::widget(["id" => $product["id"], "productName" => $product["nameOfProduct"], "price" => $product["price"], "imageUrl" => $product["imageUrl"]]) ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
