@@ -15,7 +15,8 @@ $this->title = 'Eshop';
                     href="https://github.com/matousek11/eshop-controller">api</a>. Try to add parameters
                 ?starting=10$length=20 to see what happen.</p>
 
-            <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
+            <p><a class="btn btn-lg btn-success" href="https://github.com/matousek11?tab=repositories">Look at more
+                    projects</a></p>
         </div>
     </div>
 
