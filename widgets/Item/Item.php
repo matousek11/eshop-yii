@@ -2,8 +2,8 @@
 
 namespace app\widgets\Item;
 
-use app\widgets\Item\assets\ItemAsset;
 use yii\base\Widget;
+use app\widgets\Item\assets\ItemAsset;
 
 class Item extends Widget
 {
