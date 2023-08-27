@@ -7,13 +7,16 @@ use app\widgets\Item\Item;
 $this->title = 'Eshop';
 ?>
 <div class="site-index">
+    <div class="col col-md-6">
+        <div class="jumbotron text-left bg-transparent mt-5 mb-5 w-100 w-md-50">
+            <h1 class="display-4">Eshop</h1>
 
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Congratulations!</h1>
+            <p class="lead">Eshop landing page built with Yii php framework. Data is randomly generated from <a
+                    href="https://github.com/matousek11/eshop-controller">api</a>. Try to add parameters
+                ?starting=10$length=20 to see what happen.</p>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
+            <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
+        </div>
     </div>
 
     <div class="body-content">
